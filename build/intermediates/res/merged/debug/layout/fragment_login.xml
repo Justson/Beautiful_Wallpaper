@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+     >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="false"
+       android:layout_marginTop="80dp"
+       android:orientation="vertical">
+
+
+       <android.support.design.widget.TextInputLayout
+           android:id="@+id/account_textinput"
+           android:layout_width="match_parent"
+           android:padding="0dp"
+           android:layout_height="wrap_content">
+           <AutoCompleteTextView
+               android:background="@drawable/edittext_selector"
+               android:layout_width="match_parent"
+               android:hint="账户"
+               android:gravity="center_vertical|start"
+               android:textColorHint="#333333"
+               android:maxLines="1"
+               android:textSize="18sp"
+               android:id="@+id/account_account"
+               android:layout_height="45dp" />
+
+       </android.support.design.widget.TextInputLayout>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.1dp"
+           android:background="#999999"></View>
+       <android.support.design.widget.TextInputLayout
+           android:id="@+id/account_textinput_"
+           android:layout_centerInParent="true"
+           android:layout_width="match_parent"
+           android:layout_below="@id/account_textinput"
+           android:padding="0dp"
+           android:layout_height="wrap_content">
+
+           <AutoCompleteTextView
+               android:layout_width="match_parent"
+               android:hint="密码"
+               android:background="@drawable/edittext_selector"
+               android:gravity="center_vertical|left"
+               android:textSize="18sp"
+               android:maxLines="1"
+               android:inputType="textPassword"
+               android:textColorHint="#333333"
+               android:id="@+id/account_password"
+               android:layout_height="45dp" />
+
+       </android.support.design.widget.TextInputLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal"
+           android:weightSum="2">
+
+
+           <Button
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="8dp"
+               android:textAllCaps="false"
+               android:id="@+id/account_register"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Register"
+               android:textColor="@color/color_white"
+               android:textSize="18sp"
+               style="@style/AppTheme"
+                android:background="@drawable/button_selector"
+               android:layout_gravity="center_horizontal"/>
+
+
+           <Button
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="8dp"
+               android:textAllCaps="false"
+               android:id="@+id/account_login"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="Login"
+               android:textColor="@color/color_white"
+               android:textSize="18sp"
+               style="@style/AppTheme"
+                android:background="@drawable/button_selector"
+               android:layout_gravity="center_horizontal"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="-------------使用第三方登录----------------------------------------------------------------------------------------------------------------------"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/account_qq_login"
+                android:src="@drawable/umeng_socialize_qq_on"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/account_sina_login"
+                android:src="@drawable/umeng_socialize_sina_on"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

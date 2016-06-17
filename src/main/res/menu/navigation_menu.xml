@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/main"
+        android:showAsAction="always"
+        android:title="主页"></item>
+
+    <item android:title="美女">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/start_Petty_legs"
+                android:showAsAction="always"
+                android:title="明星长腿"></item>
+
+
+            <item
+                android:id="@+id/saxModel"
+                android:showAsAction="always"
+                android:title="性感模特">
+
+            </item>
+
+        </menu>
+    </item>
+
+    <item android:title="其他">
+
+        <menu>
+            <item
+                android:id="@+id/love_car"
+                android:showAsAction="always"
+                android:title="世界名车">
+
+            </item>
+            <item
+                android:id="@+id/preview"
+                android:showAsAction="always"
+                android:title="风景建筑">
+
+            </item>
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

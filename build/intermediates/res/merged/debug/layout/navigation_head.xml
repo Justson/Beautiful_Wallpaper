@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="140dp">
+
+    <RelativeLayout
+        android:id="@+id/main_unlogin_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        >
+
+        <ImageView
+            android:id="@+id/navigation_head_unlogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/login_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/navigation_head_unlogin"
+            android:layout_below="@+id/navigation_head_unlogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="请登陆"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_login_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/navigation_head_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:src="@mipmap/login_icon" />
+
+        <TextView
+            android:id="@+id/main_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/navigation_head_login"
+            android:layout_below="@+id/navigation_head_login"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="请登陆"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
